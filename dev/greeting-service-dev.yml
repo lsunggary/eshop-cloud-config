@@ -1,11 +1,8 @@
 defaultName: leo
+feign:
+  hystrix:
+    enabled: true
 eureka:
-  instance:
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 4
-    lease-expiration-duration-in-seconds: 12
   client:
-    service-url:
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-    fetch-registry: true
-    registry-fetch-interval-seconds: 8
